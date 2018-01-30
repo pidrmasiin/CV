@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>wad</groupId>
-    <artifactId>Set04_04.Alive</artifactId>
+    <artifactId>cv</artifactId>
     <name>CV</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -54,47 +54,17 @@
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-        
+     
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
         
-        <!-- TMC -->
-        <dependency>
-            <groupId>fi.helsinki.cs.tmc</groupId>
-            <artifactId>edu-test-utils</artifactId>
-            <version>0.4.2</version>
-            <scope>test</scope>
-        </dependency>
+  
+      
         
-        <!-- FluentLenium -->
-        <dependency>
-            <groupId>org.fluentlenium</groupId>
-            <artifactId>fluentlenium-core</artifactId>
-            <version>3.4.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.fluentlenium</groupId>
-            <artifactId>fluentlenium-junit</artifactId>
-            <version>3.4.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.fluentlenium</groupId>
-            <artifactId>fluentlenium-assertj</artifactId>
-            <version>3.4.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>htmlunit-driver</artifactId>
-        </dependency>
-    
+   
     </dependencies>
 
     <build>
@@ -123,17 +93,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <repository>
-            <id>tmc</id>
-            <name>TMC repo</name>
-            <url>http://maven.testmycode.net/nexus/content/groups/public</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
+        
     </repositories>
 
     <pluginRepositories>
@@ -151,17 +111,6 @@
             <url>https://repo.spring.io/milestone</url>
             <snapshots>
                 <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>tmc</id>
-            <name>TMC repo</name>
-            <url>http://maven.testmycode.net/nexus/content/groups/public</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
