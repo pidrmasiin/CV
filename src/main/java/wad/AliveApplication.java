@@ -10,15 +10,4 @@ public class AliveApplication {
         SpringApplication.run(AliveApplication.class, args);
     }
 
-    public static String githubUrl() {
-        return "https://github.com/pidrmasiin/aliveTest";
-    }
-
-    public static String travisUrl() {
-        return "https://travis-ci.org/pidrmasiin/aliveTest";
-    }
-
-    public static String herokuUrl() {
-        return "https://young-forest-25181.herokuapp.com/";
-    }
 }

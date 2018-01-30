@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Petterin CV</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #e6ffe6;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.column {
+    float: left;
+    padding: 30px;
+    
+}
+
+/* Left and right column */
+.column.side {
+    background-color:powderblue;
+    width: 20%;
+    
+}
+
+.column.center {
+    width: 60%;
+    
+}
+
+.column.right {
+    width: 20%;
+    
+}
+
+
+
+@media (max-width: 600px) {
+    .column.side, .column.center {
+        width: 100%;
+    }
+}
+
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+</style>
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>CV</h1>
+</div>
+
+<div class="row">
+    <div class="column side">
+      <img src="kuvaCV.jpg" height="300" width="200">
+      <div style="overflow:auto;">
+      <h2>Petteri Pääkkönen</h2>
+      <h4>Yhteistiedot</h4>
+      <p>0505906877</p>
+      <p>petteri.paakkonen@helsinki.fi</p>
+      </div>
+        
+      
+    </div>
+    <div class="column center">
+        <h2>Tietoja minusta</h2>
+        <p>Olen 29-vuotias helsinkiläinen. Opiskelen valtiotieteellisessä tiedekunnassa sosiologiaa kuudetta vuotta. 
+            Tutkinnostani uupuu enää pro gradu -tutkielma sekä muutamia kursseja. Sivuaineina olen lukenut taloustiedettä
+            ja tietojenkäsittelyä. Tietojenkäsittelyn opintojen myötä olen innostunut ohjelmoinnista, 
+            joten nyt haen työtä alalta.</p>
+        <h3>Osaaminen</h3>
+        <p>Olen suorittanut noin 50 opintopistettä tietojenkäsittelystä. Alle olen koostanut aineopinnoissa
+            suorittamieni kurssien harjoitustöitä. Arvioit taitotasosta perustuvat näkemyksiini oman osaamiseni
+            eroista.
+        </p>
+        <table style="overflow:auto;">
+            <tr>
+                <th>Kieli/tekniikka</th>
+                <th>Suhteellinen taitotaso</th>
+                <th>Linkki githubiin</th>
+                <th>Huomioita</th>
+            </tr>
+            <tr>
+                <td >Java/SpringBoot</td>
+                <td>Vahvin osaaminen</td>
+                <td><a href="https://github.com/pidrmasiin/uutiset">https://github.com/pidrmasiin/uutiset </a><br>
+                    <a href="https://github.com/pidrmasiin/omahahelp">https://github.com/pidrmasiin/omahahelp</a></td>
+                <td>Java hallussa paremmin kuin SpringBoot. SpringBoot:ia käytetty uutissovelluksessa</td>
+            </tr>
+          
+            <tr>
+                <td>HTML/Thymeleaf</td>
+                <td>Hallussa kohtuullisesti</td>
+                <td><a href="https://github.com/pidrmasiin/Tsoha-Bootstrap">https://github.com/pidrmasiin/Tsoha-Bootstrap</a><br>
+                        <a href="https://github.com/pidrmasiin/uutiset">https://github.com/pidrmasiin/uutiset</a></td>
+                <td>Uutissovelluksessa käytössä myös thymeleaf, jossa osaaminen kohtalaista</td>
+            </tr>
+            <tr>
+                    <td>SQL</td>
+                    <td>Hallussa kohtuullisesti</td>
+                    <td><a href="https://github.com/pidrmasiin/Tsoha-Bootstrap">https://github.com/pidrmasiin/Tsoha-Bootstrap</a></td>
+                    <td>Sovellus ei valitettavasti ole tällä hetkelle pystyssä</td>
+            </tr>
+            <tr>
+                    <td>CSS/Bootstrap</td>
+                    <td>Osaan käyttää perustasolla</td>
+                    <td><a href="https://github.com/pidrmasiin/uutiset">https://github.com/pidrmasiin/uutiset</a><br>
+                        <a href="https://github.com/pidrmasiin/Tsoha-Bootstrap">https://github.com/pidrmasiin/Tsoha-Bootstrap</a></td>
+                    <td>Sovellus ei valitettavasti ole tällä hetkelle pystyssä</td>
+                </tr>
+            <tr>
+                <td>PHP</td>
+                <td>Osaan käyttää perustasolla</td>
+                <td><a href="https://github.com/pidrmasiin/Tsoha-Bootstrap">https://github.com/pidrmasiin/Tsoha-Bootstrap</a></td>
+                <td>Sovellus ei valitettavasti ole tällä hetkelle pystyssä</td>
+            </tr>
+            <tr>
+                    <td>JavaScript/React</td>
+                    <td>Kurssi kesken</td>
+                    <td><a href="https://github.com/pidrmasiin/fullstack">https://github.com/pidrmasiin/fullstack</a></td>
+                    <td>Linkki kurssin sivuille: <a href="https://fullstack-hy.github.io/">https://fullstack-hy.github.io/</a></td>
+                </tr>
+           
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
