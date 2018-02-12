@@ -1,0 +1,37 @@
+{
+  "name": "luetteloback",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.3",
+    "morgan": "^1.9.0"
+  },
+  "engines": {
+    "node": "^8.9.4",
+    "npm": "5.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "nodemon": "^1.14.12"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pidrmasiin/luetteloBackend.git"
+  },
+  "author": "Petteri Pääkkönen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pidrmasiin/luetteloBackend/issues"
+  },
+  "homepage": "https://github.com/pidrmasiin/luetteloBackend#readme"
+}
