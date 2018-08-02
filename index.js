@@ -1,30 +1,20 @@
 
 const express = require('express')
 const app = express()
-var morgan = require('morgan')
-
-const bodyParser = require('body-parser')
+const path = require('path')
 
 const cors = require('cors')
 
-const logger = (request, response, next) => {
-  console.log('Method:',request.method)
-  console.log('Path:  ', request.path)
-  console.log('Body:  ', request.body)
-  console.log('---')
-  next()
-}
 
-
-app.use(bodyParser.json())
 
 app.use(cors())
 
-app.use(logger)
+app.use(express.static(path.join('dist/angularcv')))
 
-app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist/angularcv/index.html'));
+});
 
-app.use(express.static('build'))
 
 
 const PORT = process.env.PORT || 3001
